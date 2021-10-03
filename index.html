@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clip-path</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="hero"></div>
+  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos exercitationem a laboriosam ut magni recusandae explicabo corrupti necessitatibus at reprehenderit ex error aperiam, perspiciatis quia. Error dignissimos hic maiores explicabo voluptatibus numquam, distinctio quam dolore perspiciatis sit illo officiis ipsa aliquam dolor reprehenderit quae asperiores exercitationem delectus perferendis nihil facere?</div>
+  <div class="other-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae quae, dolor fugiat alias ducimus placeat laborum eaque aperiam eos illum tempora enim mollitia quidem laudantium nihil. Praesentium impedit hic perferendis laudantium culpa optio voluptas aliquam, alias dolores consequuntur inventore quam, consequatur necessitatibus facere recusandae beatae laborum illum ab harum.
+  </div>
+  <script type="text/javascript">
+  const pos = document.documentElement;
+  pos.addEventListener("mousemove", e =>{
+    pos.style.setProperty('--x', + e.clientX +"px")
+    pos.style.setProperty('--y', + e.clientY +"px")
+  })
+  </script>
+</body>
+</html>
